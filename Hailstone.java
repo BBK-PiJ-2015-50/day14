@@ -9,10 +9,10 @@ public class Hailstone {
 	
 	private void launch() {
 		System.out.print("HAILSTONE SEQUENCE - ENTER n: ");
-		System.out.println(HailstoneSequence(new Scanner(System.in).nextInt(), new ArrayList<Integer>()));
+		System.out.println(HailstoneSequence(new Scanner(System.in).nextInt(), new ArrayList<>()));
 	}	
 	
-	private List<Integer> HailstoneSequence(int n, List<Integer> list) {
+	private List HailstoneSequence(int n, List<Integer> list) {
 		list.add(n);
 		if (n==1) {
 			return list;
