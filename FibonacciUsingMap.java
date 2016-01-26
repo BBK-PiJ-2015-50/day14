@@ -2,7 +2,7 @@ import java.util.*;
 import java.util.concurrent.ConcurrentHashMap;
 
 public class FibonacciUsingMap {
-    //private static Map<Long, Long> fibonacciMap = new ConcurrentHashMap<>();
+    private static Map<Long, Long> fibonacciMap = new ConcurrentHashMap<>();
 
     public static void main (String [] args) {
 		FibonacciUsingMap fum = new FibonacciUsingMap();
@@ -12,10 +12,11 @@ public class FibonacciUsingMap {
 	private void launch() {
 		System.out.print("FibonacciUsingMap - ENTER n: ");
 		System.out.println(FibonacciCalc(new Scanner(System.in).nextInt()));
+		System.out.println(fibonacciMap);
 	}
 
 	public static long FibonacciCalc (long n) {
-		return FibMapCalc(n, new ConcurrentHashMap<>());
+		return FibMapCalc(n, fibonacciMap);
 	}
 
 	private static long FibMapCalc(long n, Map<Long, Long> fibMap) {
