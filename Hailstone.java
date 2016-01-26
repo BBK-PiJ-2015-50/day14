@@ -8,7 +8,7 @@ public class Hailstone {
 	}
 	
 	private void launch() {
-		System.out.print("Hailstone sequence - enter n: ");
+		System.out.print("HAILSTONE SEQUENCE - ENTER n: ");
 		System.out.println(HailstoneSequence(new Scanner(System.in).nextInt(), new ArrayList<Integer>()));
 	}	
 	
