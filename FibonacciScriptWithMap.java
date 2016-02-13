@@ -10,13 +10,14 @@ public class FibonacciScriptWithMap {
 		System.out.print("• Enter n: ");
 		int n = Integer.parseInt(System.console().readLine());
 		System.out.println("• Memoized method:\t\t" + Fibonacci.fib(n));
+		System.out.println("• Memoized method:\t\t" + Fibonacci.fib(n));
 		System.out.println("• No memoization:\t\t" + Fibonacci.fibNonMemo(n));
 
 		System.out.println("\nTrying <long> in calculation instead of <int>");
-		System.out.print("• Enter a BIG number - greater than 46, but less than 1427: ");
+		System.out.print("• Enter a number greater than 46: ");
 		int biggerNumber = Integer.parseInt(System.console().readLine());
-		System.out.println("• Memoized with array:\t\t" + FibonacciLong.fibLong(biggerNumber));
+		System.out.println("• Memoized with array:\t" + FibonacciLong.fibLong(biggerNumber));
 		System.out.println("• Memoized with map:\t\t" + FibonacciUsingMap.FibonacciCalc(biggerNumber));
-		//System.out.println("• No memoization:\t\t" + FibonacciLong.fibNonMemoLong(biggerNumber));
+		System.out.println("• No memoization:\t\t" + FibonacciLong.fibNonMemoLong(biggerNumber));
 	}
 }
